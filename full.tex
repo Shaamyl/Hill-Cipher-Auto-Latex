@@ -18,7 +18,7 @@
 In this project, I implement a 3  ×  3 Hill Cipher Machine in Python. This machine automatically generates LaTeX reports to decipher user{-}entered Hill Ciphers step by step. \newline%
  \newline%
 %
-We will be deciphering: XRCKXIRDGMOX using the key: CIPHERING. \newline%
+We will be deciphering: IQCWTM using the key: GYBNQKURP. \newline%
  \newline%
 %
 Note that the cipher and key in the line above have been entered by the user.
@@ -35,13 +35,13 @@ Note that the cipher and key in the line above have been entered by the user.
 \end{figure}
 
 %
-We use the Lookup Table above and our key CIPHERING to create the Encryption Matrix below: \newline%
+We use the Lookup Table above and our key GYBNQKURP to create the Encryption Matrix below: \newline%
 %
 \[%
 \begin{pmatrix}%
-2.0&8.0&15.0\\%
-7.0&4.0&17.0\\%
-8.0&13.0&6.0%
+6.0&24.0&1.0\\%
+13.0&16.0&10.0\\%
+20.0&17.0&15.0%
 \end{pmatrix}%
 \]
 
@@ -60,16 +60,16 @@ E21 * E31 * M:%
 \[%
 \begin{pmatrix}%
 1.0&0.0&0.0\\%
--3.5&1.0&0.0\\%
--4.0&0.0&1.0%
+-2.167&1.0&0.0\\%
+-3.333&0.0&1.0%
 \end{pmatrix} \begin{pmatrix}%
-2.0&8.0&15.0&1.0&0.0&0.0\\%
-7.0&4.0&17.0&0.0&1.0&0.0\\%
-8.0&13.0&6.0&0.0&0.0&1.0%
+6.0&24.0&1.0&1.0&0.0&0.0\\%
+13.0&16.0&10.0&0.0&1.0&0.0\\%
+20.0&17.0&15.0&0.0&0.0&1.0%
 \end{pmatrix} = \begin{pmatrix}%
-2.0&8.0&15.0&1.0&0.0&0.0\\%
-0.0&-24.0&-35.5&-3.5&1.0&0.0\\%
-0.0&-19.0&-54.0&-4.0&0.0&1.0%
+6.0&24.0&1.0&1.0&0.0&0.0\\%
+0.0&-36.0&7.83&-2.17&1.0&0.0\\%
+0.0&-63.0&11.67&-3.33&0.0&1.0%
 \end{pmatrix}%
 \]%
 \newline%
@@ -81,15 +81,15 @@ E32 * E21 * E31 * M:%
 \begin{pmatrix}%
 1.0&0.0&0.0\\%
 0.0&1.0&0.0\\%
-0.0&-0.79&1.0%
+0.0&-1.75&1.0%
 \end{pmatrix} \begin{pmatrix}%
-2.0&8.0&15.0&1.0&0.0&0.0\\%
-0.0&-24.0&-35.5&-3.5&1.0&0.0\\%
-0.0&-19.0&-54.0&-4.0&0.0&1.0%
+6.0&24.0&1.0&1.0&0.0&0.0\\%
+0.0&-36.0&7.83&-2.17&1.0&0.0\\%
+0.0&-63.0&11.67&-3.33&0.0&1.0%
 \end{pmatrix} = \begin{pmatrix}%
-2.0&8.0&15.0&1.0&0.0&0.0\\%
-0.0&-24.0&-35.5&-3.5&1.0&0.0\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&24.0&1.0&1.0&0.0&0.0\\%
+0.0&-36.0&7.83&-2.17&1.0&0.0\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix}%
 \]%
 \newline%
@@ -99,17 +99,17 @@ E23 * E13 * E32 * E21 * E31 * M:%
 \]%
 \[%
 \begin{pmatrix}%
-1.0&0.0&0.58\\%
-0.0&1.0&-1.37\\%
+1.0&0.0&0.49\\%
+0.0&1.0&3.84\\%
 0.0&0.0&1.0%
 \end{pmatrix} \begin{pmatrix}%
-2.0&8.0&15.0&1.0&0.0&0.0\\%
-0.0&-24.0&-35.5&-3.5&1.0&0.0\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&24.0&1.0&1.0&0.0&0.0\\%
+0.0&-36.0&7.83&-2.17&1.0&0.0\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix} = \begin{pmatrix}%
-2.0&8.0&0.0&0.29&-0.46&0.58\\%
-0.0&-24.0&0.0&-1.81&2.09&-1.37\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&24.0&0.0&1.22&-0.86&0.49\\%
+0.0&-36.0&0.0&-0.41&-5.71&3.84\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix}%
 \]%
 \newline%
@@ -119,17 +119,17 @@ E12 * E23 * E13 * E32 * E21 * E31 * M:%
 \]%
 \[%
 \begin{pmatrix}%
-1.0&0.33&0.0\\%
+1.0&0.67&0.0\\%
 0.0&1.0&0.0\\%
 0.0&0.0&1.0%
 \end{pmatrix} \begin{pmatrix}%
-2.0&8.0&0.0&0.29&-0.46&0.58\\%
-0.0&-24.0&0.0&-1.81&2.09&-1.37\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&24.0&0.0&1.22&-0.86&0.49\\%
+0.0&-36.0&0.0&-0.41&-5.71&3.84\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix} = \begin{pmatrix}%
-2.0&0.0&0.0&-0.32&0.24&0.12\\%
-0.0&-24.0&0.0&-1.81&2.09&-1.37\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&0.0&0.0&0.95&-4.67&3.05\\%
+0.0&-36.0&0.0&-0.41&-5.71&3.84\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix}%
 \]%
 \newline%
@@ -139,31 +139,31 @@ D * E12 * E23 * E13 * E32 * E21 * E31 * M:%
 \]%
 \[%
 \begin{pmatrix}%
-0.5&0.0&0.0\\%
-0.0&-0.04&0.0\\%
-0.0&0.0&-0.04%
+0.17&0.0&0.0\\%
+0.0&-0.03&0.0\\%
+0.0&0.0&-0.49%
 \end{pmatrix} \begin{pmatrix}%
-2.0&0.0&0.0&-0.32&0.24&0.12\\%
-0.0&-24.0&0.0&-1.81&2.09&-1.37\\%
-0.0&0.0&-25.9&-1.23&-0.79&1.0%
+6.0&0.0&0.0&0.95&-4.67&3.05\\%
+0.0&-36.0&0.0&-0.41&-5.71&3.84\\%
+0.0&0.0&-2.04&0.46&-1.75&1.0%
 \end{pmatrix} = \begin{pmatrix}%
-1.0&0.0&0.0&-0.16&0.12&0.06\\%
-0.0&1.0&-0.0&0.08&-0.09&0.06\\%
-0.0&0.0&1.0&0.05&0.03&-0.04%
+1.0&0.0&0.0&0.16&-0.78&0.51\\%
+0.0&1.0&-0.0&0.01&0.16&-0.11\\%
+0.0&0.0&1.0&-0.22&0.86&-0.49%
 \end{pmatrix}%
 \]%
 \newline%
 %
 Then, in the final step, we multiply the regular inverse with its determinent. Then we multiply it with its detrminent's 'modular (26) inverse'. Then we write the whole matrix mod 26:%
 \[%
-5 * 1243 *  \begin{pmatrix}%
--0.16&0.12&0.06\\%
-0.08&-0.09&0.06\\%
-0.05&0.03&-0.04%
+25 * 441 *  \begin{pmatrix}%
+0.16&-0.78&0.51\\%
+0.01&0.16&-0.11\\%
+-0.22&0.86&-0.49%
 \end{pmatrix} = \begin{pmatrix}%
-3.0&7.0&16.0\\%
-2.0&6.0&17.0\\%
-9.0&8.0&20.0%
+8.0&5.0&10.0\\%
+21.0&8.0&21.0\\%
+21.0&12.0&8.0%
 \end{pmatrix} (mod  26)%
 \]%
 \newline%
@@ -171,84 +171,48 @@ Then, in the final step, we multiply the regular inverse with its determinent. T
 %
 \section{Matrix Multiplications}%
 \label{sec:MatrixMultiplications}%
-Now that we have the inverse/decryption matrix, we will multiply our cipher XRCKXIRDGMOX with the decryption matrix in chunks of 3. For each cipher chunk, we will create a decryption vector to multiply using the Lookup Table shown previously.%
+Now that we have the inverse/decryption matrix, we will multiply our cipher IQCWTM with the decryption matrix in chunks of 3. For each cipher chunk, we will create a decryption vector to multiply using the Lookup Table shown previously.%
 \[%
 \begin{pmatrix}%
-3.0&7.0&16.0\\%
-2.0&6.0&17.0\\%
-9.0&8.0&20.0%
+8.0&5.0&10.0\\%
+21.0&8.0&21.0\\%
+21.0&12.0&8.0%
 \end{pmatrix} \begin{pmatrix}%
-23.0\\%
-17.0\\%
+8.0\\%
+16.0\\%
 2.0%
 \end{pmatrix} = \begin{pmatrix}%
-12.0\\%
+8.0\\%
 0.0\\%
-19.0%
+12.0%
 \end{pmatrix} (mod26)%
 \]%
 \newline%
 %
-Decrypted chunk: MAT%
+Decrypted chunk: IAM%
 \[%
 \begin{pmatrix}%
-3.0&7.0&16.0\\%
-2.0&6.0&17.0\\%
-9.0&8.0&20.0%
+8.0&5.0&10.0\\%
+21.0&8.0&21.0\\%
+21.0&12.0&8.0%
 \end{pmatrix} \begin{pmatrix}%
-10.0\\%
-23.0\\%
-8.0%
+22.0\\%
+19.0\\%
+12.0%
 \end{pmatrix} = \begin{pmatrix}%
-7.0\\%
+1.0\\%
 8.0\\%
-18.0%
-\end{pmatrix} (mod26)%
-\]%
-\newline%
-%
-Decrypted chunk: HIS%
-\[%
-\begin{pmatrix}%
-3.0&7.0&16.0\\%
-2.0&6.0&17.0\\%
-9.0&8.0&20.0%
-\end{pmatrix} \begin{pmatrix}%
-17.0\\%
-3.0\\%
 6.0%
-\end{pmatrix} = \begin{pmatrix}%
-12.0\\%
-24.0\\%
-11.0%
 \end{pmatrix} (mod26)%
 \]%
 \newline%
 %
-Decrypted chunk: MYL%
-\[%
-\begin{pmatrix}%
-3.0&7.0&16.0\\%
-2.0&6.0&17.0\\%
-9.0&8.0&20.0%
-\end{pmatrix} \begin{pmatrix}%
-12.0\\%
-14.0\\%
-23.0%
-\end{pmatrix} = \begin{pmatrix}%
-8.0\\%
-5.0\\%
-4.0%
-\end{pmatrix} (mod26)%
-\]%
-\newline%
-%
-Decrypted chunk: IFE
+Decrypted chunk: BIG
 
 %
 \section{Decryption Result}%
 \label{sec:DecryptionResult}%
-The final result of the decryption is found by putting together all the chunks above: MATHISMYLIFE\newline%
+The final result of the decryption is found by putting together all the chunks above: IAMBIG\newline%
 
 %
 \section{Final Remarks}%
